@@ -1,0 +1,20 @@
+{
+  "name": "crud-en-terminal",
+  "version": "1.0.0",
+  "description": "Lo hicimos de manera tal que las tareas sean un recurso compartido con la aplicación web. Esto significa que se pueden usar ambas al mismo tiempo.",
+  "main": "cliApp.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "colors": "^1.4.0"
+  }
+}

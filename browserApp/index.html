@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Gestor de Tareas (CRUD)</title>
+</head>
+
+<body>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-12 text-center my-3">
+                <h1>Gestor de Tareas</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="border p-3 my-3 position-relative" id="post-box">
+                    <h6>Agregue una tarea</h6>
+                    <input type="text" id="inputPostNombre" class="form-control my-1" placeholder="Nombre"
+                        oninput="btnActivation()">
+                    <input type="text" id="inputPostDescripcion" class="form-control my-1" placeholder="Descripción"
+                        oninput="btnActivation()">
+                    <input type="text" id="inputPostEstado" class="form-control my-1" placeholder="Estado"
+                        oninput="btnActivation()">
+                    <button id="btnPost" class="btn btn-success my-3" disabled>
+                        Agregar</button>
+                </div>
+                <div class="border p-3 my-3 position-relative" id="get-box">
+                    <button id="btnGet" class="btn btn-primary mx-3 position-absolute top-50 start-0 translate-middle-y"
+                        onclick="getTasks()">Mostrar todas las
+                        tareas</button>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <ul class="border bg-dark text-white my-3 list-group list-group-flush" id="results"></ul>
+            </div>
+        </div>
+    </main>
+    <div class="alert alert-danger d-none" id="alert-error" role="alert">
+        Algo salió mal...
+    </div>
+    <script src="scripts/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
