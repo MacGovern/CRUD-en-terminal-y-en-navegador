@@ -4,7 +4,7 @@
   "description": "Lo hicimos de manera tal que las tareas sean un recurso compartido con la aplicación web. Esto significa que se pueden usar ambas al mismo tiempo.",
   "main": "cliApp.js",
   "scripts": {
-    "dev": "nodemon app.js",
+    "dev": "nodemon cliApp.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
